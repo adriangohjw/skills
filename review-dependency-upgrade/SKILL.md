@@ -30,10 +30,9 @@ For pre-1.0 packages (`0.x.y`), treat every minor bump as potentially breaking.
 
 For each intermediate version, find breaking changes from authoritative sources, in this order of preference:
 
-1. **Context7** — use `mcp__claude_ai_Context7__resolve-library-id` then `query-docs` for migration guides. Prefer this for well-known libraries.
-2. **Official changelog / release notes** — `CHANGELOG.md` in the repo, GitHub Releases page, or the project's docs site. Use WebFetch.
-3. **Migration guides** — many projects publish dedicated upgrade guides (e.g. React, Next.js, Rails).
-4. **WebSearch** — fall back to search for "<pkg> <version> breaking changes" only if the above fail.
+1. **Official changelog / release notes** — `CHANGELOG.md` in the repo, GitHub Releases page, or the project's docs site. Use WebFetch.
+2. **Migration guides** — many projects publish dedicated upgrade guides (e.g. React, Next.js, Rails).
+3. **WebSearch** — fall back to search for "<pkg> <version> breaking changes" only if the above fail.
 
 Record each breaking change with:
 - The version it landed in
